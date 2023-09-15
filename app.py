@@ -21,7 +21,7 @@ model = pickle.load(open("model.pkl", "rb"))
 def hello_world():
     return "Hello World"
 
-@app.route('/predict', methods=['GET', 'POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
         lead1 = request.form["ekg1"]
