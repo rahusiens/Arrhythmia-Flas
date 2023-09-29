@@ -40,7 +40,7 @@ def predict():
         feature = classification.cek(df)
         result = model.predict(feature)
 
-        r = requests.post("http://127.0.0.1:8000/api/send_data",
+        r = requests.post("http://https://aritmia.telekardiologi.com/api/send_data",
             data={'patient_id': id,
                     'time': str(sample_time),
                     'lead1': str(lead1),
