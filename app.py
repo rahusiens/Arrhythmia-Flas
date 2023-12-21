@@ -44,7 +44,8 @@ def predict():
             data={'patient_id': id,
                     'time': str(sample_time),
                     'lead1': str(lead1),
-                    'lead2': str(lead2)
+                    'lead2': str(lead2),
+                    'pred': str(result)
             })
 
         return json.dumps({"hasil": str(result)})
